@@ -1,0 +1,45 @@
+body, button{
+    font-family: 'Black Ops One', sans-serif;
+}
+
+/* Main Dropdown Button */
+.DrpDwnBtn {
+    background-color: #FFBD33;
+    padding: 15px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Comes wihtin parent <div> - positioned to be relative */
+.DrpDwn {
+    position: relative;
+}
+
+/* Child <div> positioned to be absolute */
+.DrpDwnData {
+    display: none;
+    position: absolute;
+    background-color: #7BA4FA;
+    min-width: 160px;
+}
+
+.DrpDwnData a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of options on hover */
+.DrpDwnData a:hover {
+    background-color: #F1F1F1
+}
+
+.DrpDwn:hover .DrpDwnData {
+    display: block;
+}
+
+.DrpDwn:hover .DrpDwnBtn {
+    background-color: #FAD17B;
+}
